@@ -1,0 +1,23 @@
+#include <iostream>
+
+int main()
+{
+	std::cout << "PRINT AND PRINT" << std::endl;
+	std::cout << "or i could type slash n ";
+	std::cin.get();
+}
+
+// and then there is
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	cout << "PRINT AND PRINT" << std::endl;
+	cout << "or i could type slash n ";
+	return 0;
+}
+
+  // which is faster but for some reason some weird text come at bottom mentioning files or something. 
+  // when i use std:: it doesnt do that.. weird.
