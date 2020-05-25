@@ -14,3 +14,23 @@ int main()
 }
 
 //calculator that adds 2 numbers.
+// another similar one.. if not almost same
+
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a, b, c;
+	cout << "--- Please enter a number .. -- \n ";
+	cin >> a;
+	cout << "--- Please enter a number again.. -- \n ";
+	cin >> b;
+	cout << "--- one more please.. -- \n ";
+	cin >> c;
+	int sum = a + b + c;
+	cout << "----- \n Answer for all 3 added up is... = " << sum;
+	return 0;
+}
