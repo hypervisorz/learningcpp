@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a;
+	cout << "write a number to store \n ";
+	cin >> a;
+	cout << "\nthanks! ";
+	return 0;
+}
