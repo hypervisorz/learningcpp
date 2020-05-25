@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a, b, c, sum;
+	cout << "-- type 3 numbers. that will add up -- \n";
+	cin >> a >> b >> c;
+	sum = a + b + c;
+	cout << "\nLe answer is .. = " << sum;
+	return 0;
+}
+
+//coded one but with not much text when entering numerals. 
+//runs tho!
