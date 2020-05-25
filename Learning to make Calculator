@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a, b;
+	cout << "--------type in a number to add \n";
+	cin >> a;
+	cout << "--------set number again. \n";
+	cin >> b;
+	int sum = a + b;
+	cout << "answer = " << sum << endl;
+	return 0;
+}
+
+//calculator that adds 2 numbers.
