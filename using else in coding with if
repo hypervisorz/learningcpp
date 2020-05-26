@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int num;
+	cout << "WHATS 3+3 BOY" << endl;
+	cin >> num;
+
+	if (num == 6)
+		cout << "correct\n";
+	else
+		cout << "wrong\n";
+
+}
+
+
+  //USING else cout instead of telling it if (num !=6) 
