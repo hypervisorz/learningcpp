@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	string input;
+	cout << "do you like pizza" << endl;
+	cin >> input;
+
+	if (input == "yes")
+		cout << "wonderful.";
+
+	else 
+		cout << "nope nigga" << endl;
+	
+}
