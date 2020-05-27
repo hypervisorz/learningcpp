@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int num;
+	cout << "--whats 3 + 3--" << endl;
+	cin >> num;
+
+	if (num == 6)
+		cout << "--right!--" << endl;
+	if (num<=5)
+		while
+			(cout << "--wrong!--");
+	if (num >= 10)
+		while
+			(cout << "--THE F U THINK U DOIN--");
+	
+
+}
+// mixed and matched some code that i learned to see if i could add more statements and get a working program at the end. with the out comes
+//i was actually thinking about\
+
+// after using some statements(functions) i noticed that i couldnt run programs unless i used (cout<<x) after using while for if statements
+// i used while so that it would spam that youre wrong and also if youre retarded it will tell you (cout << "--THE F U THINK U DOIN--");
