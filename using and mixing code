@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	string input;
+	cout << "do you like pizza?" << endl;
+	cin >> input;
+
+	if (input == "yes")
+		cout << "BET";
+
+	if (input == "no")
+		while
+			(cout << "WHAT?!");
+	else
+		while
+			(cout << "NIGA");
+}
+
+  //more code i tested
+  //using string input if you type yes results with bet. if user inputs no then spams what. 
+  // if user inputs anything random.. instead of program auto stopping it will spam N$%$
