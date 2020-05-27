@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a;
+    cin >> a;
+    while (a == 1)
+    cout << "NIGGA";
+    cout << " niggaa";
+    cout << "  niggaa";
+    cout << "   niggaa";
+    cout << "    niggaa";
+    cout << "    niggaa";
+    cout << "   niggaa";
+    cout << "  niggaa";
+    cout << " niggaa";
+    cout << "niggaa";
+}
+
+  // using while in a statement
+   // causing it to loop<also meaning as long as>
+   
+   /*A loop repeatedly executes a set of statements until a particular condition is satisfied.
+
+A while loop statement repeatedly executes a target statement as long as a given condition remains true.
+Syntax:
+while (condition) {
+   statement(s);
+}
+
+The loop iterates while the condition is true. */
