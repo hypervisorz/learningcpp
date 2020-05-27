@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int num;
+	cout << "type anything or 1 " << endl;
+		cin >> num;
+	while (num <=5)
+		cout << "NIGGA";
+}
+//learning to use while (num<=5) instead of ==5 meaning its going to only work if use inputs numbers less than 5.
+// or i could do (num>=5) for greater than
+// keep in mind this can be used for any function for example
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	string input;
+	cout << "type pizza " << endl;
+	cin >> input;
+	while (input <="pizza")
+		cout << "NIGGA";
+}
