@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a = 45;
+	int b = 60;
+	int sum = a + b;
+	cout << "answer = " << sum;
+}
+// this was actually learned on day 1 of coding 5/25/20
