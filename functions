@@ -1,0 +1,13 @@
+#include <iostream>
+#include <Windows.h>
+
+int add(int x, int y)
+{
+	int sum = x + y;
+	std::cout << "answer is " << sum;
+	return sum;
+}
+int main()
+{
+	add(30, 40);
+}
