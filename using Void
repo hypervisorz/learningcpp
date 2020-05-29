@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+void printShit(int x) {
+	cout << "favorite number is" << endl;
+
+}
+int main()
+{
+	printShit(20);
+return 0;
+}
