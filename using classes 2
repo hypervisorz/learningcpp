@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+class SetnameClass {
+public:
+	void SetSaying() {
+		cout << "whats setsaying going to say? here " << endl;
+	}
+		void Crying(){
+			cout << "Crying test" << endl;
+	}
+};
+int main()
+{
+	SetnameClass SetObject;
+	SetObject.SetSaying();
+		
+
+		SetObject.Crying();
+		return 0;
+
+	
+}
+// tested using and adding another void to add later. 
