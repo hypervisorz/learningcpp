@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+class SetClass {   // set class name. turn into private or public if you want it to be used in int main
+public:                //public then void will be what youll say to access that class saying. and cout will be what it says
+void sayingyoustore() {  //when activating void
+		cout << "what your void will output" << endl;
+	}
+
+};
+int main()
+{
+
+	SetClass SetObject;
+	SetObject.sayingyoustore();
+		return 0;             //setting up objects. 
+
+
+}
+
+//using classes. 
+//pulic only. 
