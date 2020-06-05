@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class setClass {
+public:
+	string input;
+	void saying() {
+		cout << "Enter a Letter" << endl;
+		cin >> input;
+	}
+	void enterNumber() {
+		cout << "Now enter Number " << endl;
+		int x;
+		cin >> x;
+		cout << "Information Stored\n" << input << x;
+	}
+};
+int main()
+{
+	setClass setObject;
+	setObject.saying();
+
+	setObject.enterNumber();
+
+	
+	
+
+}
