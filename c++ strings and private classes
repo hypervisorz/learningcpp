@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>	
+using namespace std;
+
+class myClass {
+public:
+	void myName(string x) {
+		name = x;
+	}
+	string getName() {
+		return name;
+	}
+private:
+	string name;
+};
+
+int main()
+{
+	myClass mn;
+	mn.myName("Name uckey");
+	cout << mn.getName();
+	return 0;
+}
