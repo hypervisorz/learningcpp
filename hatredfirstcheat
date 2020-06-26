@@ -1,0 +1,86 @@
+#include <iostream>
+#include <Windows.h>
+#include "process.h"
+#include <tlhelp32.h>
+ 
+DWORD GetPID(const wchar_t* ProcessName) {
+    HANDLE snapshot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
+    if (!snapshot)
+        return 0;
+    else
+    {
+        PROCESSENTRY32 procentry;
+        procentry.dwSize = sizeof(procentry);
+        while (Process32Next(snapshot, &procentry))
+        {
+            if (!_wcsicmp((const wchar_t*)procentry.szExeFile, ProcessName))
+                return procentry.th32ProcessID;
+        }
+    }
+}
+
+#define POLL_RATE 100
+#define WINDOW_NAME "Hatred (64-bit, PCD3D_SM5)"
+#define AMMO_ADDRESS 0x20E269E8D74
+
+        int main(int argc, char** argv)
+        {
+
+            //get the games window handle
+            std::cout << "looking for game..." << std::endl;
+
+         
+            DWORD process_id = GetPID(L"Hatred-Win64-Shipping.exe"); //Hatred-Win64-Shipping.exe
+            // open the process
+            HANDLE process_handle;
+            process_handle = OpenProcess(PROCESS_ALL_ACCESS, FALSE, process_id);
+            if (process_handle != NULL)
+            {
+                std::cout << "Process Opened" << std::endl;
+            }
+            else
+            {
+                std::cout << "process was not opened...." << std::endl;
+                exit(1);
+            }
+
+            //setup for memory hacking
+            bool lock_ammo = false;
+
+            // display memory hacker menu and take options
+            bool update_screen = true;
+            while (true)
+            {
+                if (update_screen)
+                {
+                    system("cls");
+                    std::cout << "SUPER GOD DAMN UNLITED AMMO CHEAT" << std::endl;
+                    std::cout << "=================================" << std::endl;
+                    std::cout << " [F1] - (" << (lock_ammo ? "on" : "off") << ") Lock Ammo to 1,000" << std::endl;
+                    update_screen = false;
+
+                }
+
+                SHORT keypress;
+
+                //key press for ammo
+                keypress = GetAsyncKeyState(VK_F1);
+                if (keypress)
+                {
+                    lock_ammo = !lock_ammo;
+                    update_screen = true;
+                }
+
+                //Apply current settings to the game memory
+                if (lock_ammo)
+                {
+                    int write_value = 1000;
+                    WriteProcessMemory(process_handle, (LPVOID)AMMO_ADDRESS, &write_value, sizeof(write_value), NULL);
+                }
+
+
+                Sleep(POLL_RATE);
+            };
+
+        }
+    
